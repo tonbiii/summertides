@@ -4,6 +4,14 @@
     {
       "source": "/api/:path*",
       "destination": "https://summer.globalcryptotransfer.com/api/:path*"
+    },
+    {
+      "source": "/refer/:path*",
+      "destination": "https://summer.globalcryptotransfer.com/refer/:path*"
+    },
+    {
+      "source": "/refer",
+      "destination": "https://summer.globalcryptotransfer.com/refer"
     }
   ],
   "headers": [
