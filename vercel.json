@@ -2,6 +2,14 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/scanticket",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/scanticket/",
+      "destination": "/index.html"
+    },
+    {
       "source": "/api/:path*",
       "destination": "https://summer.globalcryptotransfer.com/api/:path*"
     },
@@ -17,6 +25,12 @@
   "headers": [
     {
       "source": "/",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/scanticket",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
